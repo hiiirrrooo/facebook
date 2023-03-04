@@ -19,7 +19,6 @@ body {
     border-bottom: 2px solid black;
     flex-grow: 1;
     margin: 0px 0px 0px 5px;
-    flex-direction: column;
     padding-left: 0px;
 }
 
@@ -29,7 +28,7 @@ header * {
 }
 
 header {
-    height: 40px;
+    height: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -67,8 +66,13 @@ nav ul>li:hover {
     cursor: pointer;
 }
 
+main * {
+    display: flex;
+    flex-direction: column;
+}
+
 #content-area aside {
-    flex-grow: 0.5;
+    flex-grow: 0.3;
 }
 
 aside {
@@ -83,6 +87,77 @@ aside p {
 }
 
 #content-area main {
-    flex-grow: 7;
+    flex-grow: 5;
 }
 
+main {
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 25px;
+    flex-direction: column;
+}
+
+main section1 {
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    width: 50%;
+    box-shadow: 0px 3px 5px #ccc;
+    border-radius: 10px;
+    margin: 0px;
+    padding-left: 5px;
+}
+
+section1 section{
+    flex-direction: row;
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+}
+
+#stories{
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+section1 ul>li {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    min-width: 100px;
+}
+
+section1 div {
+    width: 80px;
+    border: 1px solid black;
+    margin-left: 10px;
+}
+
+main section2 {
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    width: 50%;
+    box-shadow: 0px 3px 5px #ccc;
+    border-radius: 10px;
+    margin: 0px;
+    padding-left: 5px;
+}
+
+#content-area sidebar {
+    display: flex;
+    flex-direction: column;
+    line-height: 24px;
+    font-weight: bold;
+    flex-grow: 4;
+}
+
+main section2 {
+    flex-wrap: wrap;
+}
