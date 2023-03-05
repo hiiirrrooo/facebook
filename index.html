@@ -10,92 +10,126 @@
 <body>
     <div>
         <header>
-            <section>
-                facebook
+            <section id="facebook">
+                <img src="assets/facebook.png" alt="fb logo" width="130" height="30">
             </section>
             <section>
                 <input type="text" placeholder="Search Facebook">
             </section>
             <nav>
                 <ul>
-                    <li>Messages</li>
-                    <li>Notifications</li>
-                    <li>Profile</li>
+                    <li><i class="fa-brands fa-facebook-messenger" style="position: relative; top: 10px;
+                        bottom: 5px; left: 12px;"></i></li>
+                    <li><i class="fa-solid fa-bell" style="position: relative; top: 10px;
+                        bottom: 5px; left: 12px;"></i></li>
+                    <li><img src="assets/me.jpg" alt="me"></li>
                 </ul>
             </nav>
         </header>
-        <section id="content-area" class="display-flex"style='removethisbackground-color: #18191A;'>
+        <section id="content-area" class="display-flex" style='background-color: #f0f2f5;'>
             <aside id="content-area" class="borderstyle">
                 <section class="borderstyle">
                     <p> <i class="fa-sharp fa-solid fa-house"></i> Home</p>
-                    <p>Messenger</p>
+                    <p> <img src="assets/me.jpg" alt="me"> Messenger</p>
                 </section>
                 <section class="borderstyle">
-                    <p>Friends</p>
-                    <p>Messenger</p>
-                    <p>Saved</p>       
-                    <p>Most recent</p>
-                    <p>Marketplace</p>
-                    <p>See all</p>
+                    <p> <i class="fa-solid fa-user-group"></i> Friends</p>
+                    <p> <i class="fa-brands fa-facebook-messenger"></i> Messenger</p>
+                    <p> <i class="fa-solid fa-bookmark" style="width: 20px"></i> Saved</p>       
+                    <p> <i class="fa-regular fa-calendar"></i> Most recent</p>
+                    <p> <i class="fa-solid fa-store"></i> Marketplace</p>
+                    <p> <i class="fa-solid fa-ellipsis"></i> See all</p>
                 </section>
-                <section class="borderstyle">
-                    <p>IT2R1 - Announcements</p>
-                    <p>IT213 - Platform Technologies</p>
-                    <p>IT2R1 - Announcements</p>
-                    <p>See all groups</p>
+                <section id="groups" class="borderstyle">
+                    <p> <img src="assets/it2r1.jpg" alt="me"> IT2R1 - Announcements</p>
+                    <p> <img src="assets/it211.jpg" alt="me"> IT211 - Introduction to HCI</p>
+                    <p> <img src="assets/it212.jpg" alt="me"> IT212 - Fundamentals of DS</p>
+                    <p> <i class="fa-solid fa-people-group"></i> See all groups</p>
                 </section>
-                <section class="borderstyle">
-                    <p>Guitar Flash</p>
-                    <p>Criminal Case</p>
-                    <p>USTP Facebook Group</p>
-                    <p>MarkyXRox (GRSHS-X)</p>
-                    <p>8 Ball Pool</p>
-                    <p>See all shortcuts</p>
+                <section id="groups" style="margin-left: 5px;">
+                    <p> <img src="assets/guitar-flash.jpeg" alt="me"> Guitar Flash</p>
+                    <p> <img src="assets/criminal-case.jpg" alt="me"> Criminal Case</p>
+                    <p> <img src="assets/ustp.jpg" alt="me"> USTP Facebook Group</p>
+                    <p> <img src="assets/marky.png" alt="me"> MarkyXRox (GRSHS-X)</p>
+                    <p> <img src="assets/pool.png" alt="me"> 8 Ball Pool</p>
+                    <p> <i class="fa-solid fa-link"></i> See all shortcuts</p>
                 </section>
                 <section id="section-end" class="borderstyle">
-                    <p>Privacy  · Terms  · Advertising  · Ad choices   ·</p>
-                    <p>Cookies  · More  · Meta © 2023</p>
+                    <p >Privacy  · Terms  · Advertising  · Ad choices   ·
+                        <br>
+                        Cookies  · More  · Meta © 2023
+                    </p>
                 </section>
             </aside>
             <main id="content-area" class="display-flex">
-                <section1>
-                    <section id="content-area">
-                        <ul class="borderstyle">Stories</ul>
-                        <ul class="borderstyle">Reels</ul>
+                <section1 id="main-content">
+                    <section>
+                        <ul id="content-area" class="borderstyle">Stories</ul>
+                        <ul id="content-area" class="borderstyle">Reels</ul>
                     </section>
-                    <section id="stories" style="flex-grow: 1;">
+                    <nav id="stories">
                         <div>1asdaasdasdasdsaddas</div>
                         <div>asdasdasdasdasdasdas2</div>
                         <div>asdasdasdadasdasasd3</div>
                         <div>4asdaasdasdasdsaddsasdas</div>
                         <div>asdaasdasdasdasdsd5</div>
                         <div>asdaasdadasdasdsdasd6</div>
-                    </section>
+                    </nav>
                 </section1>
-                <section2>
-                    <section id="content-area">
-                        <ul class="borderstyle">Stories</ul>
-                        <ul class="borderstyle">Reels</ul>
+                <section2 id="main-content">
+                    <section>
+                        <ul>Stories</ul>
+                        <ul>Reels</ul>
                     </section>
-                    <section2 id="stories" style="flex-grow: 1;">
-                        <div>1asdaasdasdasdsaddas</div>
-                        <div>asdasdasdasdasdasdas2</div>
-                        <div>asdasdasdadasdasasd3</div>
-                        <div>4asdaasdasdasdsaddsasdas</div>
-                        <div>asdaasdasdasdasdsd5</div>
-                        <div>asdaasdadasdasdsdasd6</div>
-                    </section2>
+                    <nav id="content-area">
+                        <ul>Live video</ul>
+                        <ul>Photo/video</ul>
+                        <ul>Feeling/activity</ul>
+                    </nav>
                 </section2>
-                <section3>
-                    
+                <section3 id="main-content">
+                    <section>
+                        <ul>Stories</ul>
+                        <ul>Reels</ul>
+                    </section>
+                    <nav id="content-area">
+                        <ul>Like</ul>
+                        <ul>Comment</ul>
+                        <ul>Share</ul>
+                    </nav>
                 </section3>
             </main>
-            <sidebar style="flex-grow: 2" class="borderstyle">
+            <sidebar class="borderstyle">
                 <section class="borderstyle">
-                    1
+                    <h1>Your Pages and Profile</h1>
+                    <p>Bradley's Dessert Selection</p>
+                    <p> <i class="fa-light fa-circle-user"></i> Switch Into Page</p>
+                    <p> <i class="fa-solid fa-bullhorn"></i> Create Promotion</p>
                 </section>
                 <section class="borderstyle">
-                    2
+                    <h1>Birthdays</h1>
+                    <div style="padding-bottom: 20px;"> <i class="fa-solid fa-gift" style="font-size: 25px; "></i> 
+                        <b>Kent Jangao</b> has their birthday today.</div>
+                </section>
+                <section id="profpic" style="margin-left: 5px;">
+                    <span>
+                        <h1>Contacts</h1>
+                        <nav>
+                            <ul> <i class="fa-solid fa-video"></i> </ul>
+                            <ul> <i class="fa-solid fa-magnifying-glass"></i> </ul>
+                            <ul> <i class="fa-solid fa-ellipsis"></i> </ul>
+                        </nav>
+                    </span>
+                    <p> <img src="assets/profpic/mari.jpg" alt="me"> Klaire Mari</p>
+                    <p> <img src="assets/profpic/rigel.jpg" alt="me"> Christopher Mancao</p>
+                    <p> <img src="assets/profpic/elijah.jpg" alt="me"> Elijah Sebastian Pajaron</p>
+                    <p> <img src="assets/profpic/john.jpg" alt="me"> John Baña</p>
+                    <p> <img src="assets/profpic/maryjane.jpg" alt="me"> MaryJane Daguplo Sambalod</p>
+                    <p> <img src="assets/profpic/kliyo.png" alt="me"> Chleo Aesobelle Rautraut Susana</p>
+                    <p> <img src="assets/profpic/roy.jpg" alt="me"> Roy Adolf Federic Elorde</p>
+                    <p> <img src="assets/profpic/zuriel.jpg" alt="me"> Zuriel John</p>
+                    <p> <img src="assets/profpic/carmelle.jpg" alt="me"> Carmelle Ezrah Sambaan</p>
+                    <p> <img src="assets/profpic/xavier.jpg" alt="me"> Xavier John Bardilas</p>
                 </section>
             </sidebar>
         </section>
