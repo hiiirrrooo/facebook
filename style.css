@@ -4,6 +4,7 @@ body {
     flex-grow: 1;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
+    background-color: #f0f2f5;
 }
 
 #content-area {
@@ -19,26 +20,23 @@ header * {
     display: flex;
     flex-direction: row;
 }
-
 header {
     height: 60px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-color: white;
     border-bottom: 2px solid #d0d2d7;
     margin: 0px;
     padding-left: 5px;
 }
-
 header section {
     justify-content: center;
     align-items: center;  
 }
-
 #facebook {
     padding-left: 10px;
 }
-
 input {
     height: 40px;
     width: 600px;
@@ -51,14 +49,12 @@ input {
 input:hover {
     background-color: #e4e6e9;
 }
-
 header nav {
     height: inherit;
     justify-content: center;
     align-items: center;
     margin-right: 20px;
 }
-
 header nav ul>li {
     min-width: 40px;
     background-color: #e4e6eb;
@@ -66,13 +62,11 @@ header nav ul>li {
     font-size: 30px;
     margin-left: 10px;
 }
-
 header nav ul>li img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
 }
-
 header nav ul>li:hover { 
     background-color: #d8dadf;
     cursor: pointer;
@@ -81,11 +75,9 @@ header nav ul>li:hover {
 #content-area aside {
     flex-grow: 0.01;
 }
-
 #content-area main {
     flex-grow: 3;
 }
-
 #content-area sidebar {
     width: 375px;
     word-wrap: break-word;
@@ -97,7 +89,6 @@ aside {
     line-height: 24px;
     padding: 0px 50px 0px 10px;
 }
-
 aside img {
     border-radius: 50%;
     position: relative;
@@ -108,16 +99,22 @@ aside img {
     height: 25px;
     margin-right: 5px;
 }
-
-aside p:hover {
+aside span {
+    text-align: left;
+}
+aside div {
+    flex-direction: row;
+    margin: 16px 0px 16px 0px;
+}
+aside div:hover {
     background-color: #e4e6e9;
     border-radius: 10%;
+    cursor: pointer;
 }
 
 #groups {
     line-height: 16px;
 }
-
 #groups img {
     border-radius: 25%;
     position: relative;
@@ -128,12 +125,10 @@ aside p:hover {
     height: 25px;
     margin-right: 5px;
 }
-
 i {
     font-size: 18px;
     margin-right: 10px;
 }
-
 #section-end {
     font-size: 14px;
     font-weight: 300;
@@ -147,26 +142,23 @@ sidebar {
     flex-direction: column;
     line-height: 24px;
 }
-
 sidebar span {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
-
 sidebar nav {
     display: flex;
     flex-direction: row;
     height: inherit;
     min-width: 100px;
 }
-
 sidebar p:hover {
     background-color: #e4e6e9;
     border-radius: 10%;
+    cursor: pointer;
 }
-
 #profpic img {
     border-radius: 50%;
     position: relative;
@@ -182,14 +174,15 @@ main * {
     display: flex;
     flex-direction: column;
 }
-
 main {
     align-items: center;
     margin-top: 25px;
     flex-direction: column;
     display: flex;
 }
-
+main img:hover {
+    cursor: pointer;
+}
 #main-content {
     text-align: center;
     width: 690px;
@@ -202,17 +195,14 @@ main {
 main section1 {
     height: 300px;
 }
-
 section1 section{
     flex-direction: row;
     height: 40px;
     padding-top: 20px;
 }
-
 section1 nav {
     height: 300px;
 }
-
 section1 div {
     height: 200px;
     width: 100px;
@@ -222,12 +212,17 @@ section1 div {
     word-wrap: break-word;
     border-radius: 20px;
 }
-
 section1 span {
     flex-direction: row;
     justify-content: center;
 }
-
+section1 span:hover {
+    cursor: pointer;
+}
+#Reels:hover {
+    cursor: pointer;
+    background-color: #e4e6e9;
+}
 .story-color {
     color: #1876f2;
 }
@@ -242,17 +237,15 @@ section1 span {
     top: 125px;
     color: black;
 }
-
 #stories{
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
 }
-
 #stories div:hover {
     opacity: 0.5;
+    cursor: pointer;
 }
-
 #stories p {
     padding: 0px 10px 0px 10px;
     font-size: 12px;
@@ -266,13 +259,16 @@ main section2 {
     height: 110px;
     margin-top: 25px;
 }
-
 section2 section {
     flex-direction: row;
     height: 40px;
     padding-top: 10px;
 }
-
+section2 nav div:hover {
+    cursor: pointer;
+    background-color: #e4e6e9;
+    border-radius: 10%;
+}
 #section-nav {
     flex-direction: row;
     justify-content: space-around;
@@ -286,18 +282,20 @@ main section3 {
     height: 300px;
     margin-top: 25px;
 }
-
 section3 section {
     flex-direction: row;
     height: 100px;
     padding-top: 10px;
 }
-
 section3 nav {
     border-bottom: 1px solid #ced0d4;
     border-top: 1px solid #ced0d4;
 }
-
+section3 nav div:hover {
+    cursor: pointer;
+    background-color: #e4e6e9;
+    border-radius: 10%;
+}
 #feed {
     padding: 5px 0px 10px 10px;
     text-align: left;
